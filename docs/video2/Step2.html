@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepali Kanda - Step 2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    /* Header with background image + overlay */
+    header {
+      position: relative;
+      width: 100%;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: red;
+      background-image: url('header-bg.jpg'); /* replace with your local image */
+      background-size: cover;
+      background-position: center;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+      margin: 5px 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+
+    /* Sections */
+    section {
+      width: 95%;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(28,28,28,0.8);
+      border-radius: 10px;
+    }
+    section img {
+      width: 100%;
+      display: block;
+      margin: 15px auto;
+      border-radius: 8px;
+    }
+
+    /* Video containers */
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 15px auto;
+      padding-top: 56.25%; /* 16:9 ratio */
+    }
+    .video-container video {
+      position: absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      border-radius: 8px;
+    }
+
+    /* Ad placeholders */
+    .ad-box {
+      background: #2a2a2a;
+      border: 2px dashed #999;
+      text-align: center;
+      padding: 40px;
+      margin: 20px auto;
+      font-style: italic;
+      border-radius: 8px;
+      color: #ccc;
+      max-width: 1200px;
+    }
+
+    /* Continue button */
+    .btn {
+      display: block;
+      width: 280px;
+      margin: 35px auto;
+      padding: 15px;
+      text-align: center;
+      background: linear-gradient(45deg, #ff0000, #000);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(45deg, #000, #ff0000);
+      transform: scale(1.05);
+    }
+
+    /* Footer with background image + overlay */
+    footer {
+      position: relative;
+      width: 100%;
+      padding: 30px 20px;
+      text-align: center;
+      color: red;
+      background-image: url('footer-bg.jpg'); /* replace with your local image */
+      background-size: cover;
+      background-position: center;
+    }
+    footer::before {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    footer p {
+      position: relative;
+      z-index: 2;
+      margin: 5px 0;
+    }
+
+    /* Wait timer text */
+    #timer {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ff4c4c;
+    }
+
+    @media (max-width:600px){
+      header h1 { font-size:1.5rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nepali Kanda - Step 2</h1>
+  <p>Access your videos safely & securely</p>
+</header>
+
+<div class="ad-box">[ Top Ad Placeholder ]</div>
+
+<section>
+  <h2>How Nepali Kanda Works</h2>
+  <img src="info1.jpg" alt="How It Works">
+  <p>Nepali Kanda delivers adult content through a safe 4-step process. Each step helps us provide a secure browsing experience while supporting the platform through advertisements. Your privacy and access are our top priorities.</p>
+</section>
+
+<section>
+  <h2>Trial Video Section</h2>
+  <p>Check out some sample videos below (you can replace with your own):</p>
+  <div class="video-container">
+    <video controls>
+      <source src="trial1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video controls>
+      <source src="trial2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<div class="ad-box">[ Middle Ad Placeholder ]</div>
+
+<section>
+  <h2>Why Choose Nepali Kanda</h2>
+  <img src="info2.jpg" alt="Why Choose">
+  <ul>
+    <li>Regularly updated adult videos.</li>
+    <li>Safe external hosting for all videos.</li>
+    <li>Designed for Nepali viewers with privacy in mind.</li>
+    <li>Fully transparent — no hidden tricks or charges.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Tips for Adult Safety</h2>
+  <img src="info3.jpg" alt="Safety Tips">
+  <p>Always use secure networks when accessing adult content. Ensure your device is updated and protected. Nepali Kanda ensures videos are hosted externally for maximum safety.</p>
+</section>
+
+<div class="ad-box">[ Bottom Ad Placeholder ]</div>
+
+<section>
+  <h2>Contact & Information</h2>
+  <img src="contact.jpg" alt="Contact">
+  <p>Stay connected for updates, news, and announcements. Reach out to us via:</p>
+  <p><strong>Email:</strong> p1ussyl1over@gmail.com</p>
+  <p><a href="#" target="_blank">Visit our Facebook Page</a> (coming soon)</p>
+</section>
+
+<div id="timer">You can continue in <span id="countdown">10</span> seconds</div>
+
+<a href="Step3.html" id="continueBtn" class="btn" style="display:none;">Continue to Step 3</a>
+
+<footer>
+  <p>&copy; 2025 Nepali Kanda. All rights reserved.</p>
+</footer>
+
+<script>
+  // Wait timer
+  let timeLeft = 10;
+  const countdown = document.getElementById('countdown');
+  const continueBtn = document.getElementById('continueBtn');
+
+  const timer = setInterval(() => {
+    timeLeft--;
+    countdown.textContent = timeLeft;
+    if(timeLeft <= 0){
+      clearInterval(timer);
+      document.getElementById('timer').style.display = 'none';
+      continueBtn.style.display = 'block';
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
