@@ -1,9 +1,8 @@
-// List all video folders here
-// Add new videos to this array when uploading new folders
-const videos = ["video1", "video2", "video3"]; // etc
+// List of your video folders
+const videos = ["video1", "video2"];
 
-// Pick the first video for Continue button
+// Pick the first video for the Continue button
 const firstVideo = videos[0];
 
-// Set href for the Continue button
+// Update the Continue button link dynamically
 document.getElementById("continueBtn").href = `${firstVideo}/Step2.html`;
