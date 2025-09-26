@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nepali Kanda</title>
-    <script>
-        // List all your video folders
-        const videos = ["video1", "video2", "video3"]; // add new folders as needed
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepali Kanda Redirect</title>
+  <script>
+    async function redirectToFirstVideo() {
+      try {
+        // Load the list of videos from JSON
+        const response = await fetch('videos.json');
+        const data = await response.json();
 
-        // Pick the first video folder dynamically
-        const firstVideo = videos[0];
+        // Pick the first video in the list
+        const firstVideo = data.videos[0];
 
-        // Automatically redirect to Step2.html of the first video
-        window.location.replace(`${firstVideo}/Step2.html`);
-    </script>
+        // Redirect to its step1.html
+        window.location.href = `videos/${firstVideo}/step1.html`;
+      } catch (error) {
+        console.error("Error loading videos.json", error);
+        document.body.innerHTML = "<h2>Error: Could not load video list.</h2>";
+      }
+    }
+
+    window.onload = redirectToFirstVideo;
+  </script>
 </head>
 <body>
+  <!-- Nothing visible, it just redirects -->
 </body>
 </html>
