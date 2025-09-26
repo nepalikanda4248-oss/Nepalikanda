@@ -7,14 +7,14 @@
   <script>
     async function redirectToFirstVideo() {
       try {
-        // Load the list of videos from videos.json
+        // Load the list of video folders from videos.json
         const response = await fetch('videos.json');
         const data = await response.json();
 
-        // Pick the first video name (example: "video1")
+        // Pick the first video folder (e.g., "video1")
         const firstVideo = data.videos[0];
 
-        // Redirect to its step1.html file
+        // Redirect to Step2.html of that video (match your exact filename)
         window.location.href = `videos/${firstVideo}/Step2.html`;
       } catch (error) {
         console.error("Error loading videos.json", error);
@@ -26,6 +26,6 @@
   </script>
 </head>
 <body>
-  <!-- Hidden redirect, nothing visible -->
+  <!-- Nothing visible, just redirects -->
 </body>
 </html>
