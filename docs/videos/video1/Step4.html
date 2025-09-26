@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepali Kanda - Step 4</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #eee;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      position: relative;
+      width: 100%;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: red;
+      background-image: url('header-bg.jpg'); /* generic header image */
+      background-size: cover;
+      background-position: center;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index:1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index:2;
+      margin: 5px 20px;
+    }
+
+    /* Sections */
+    .section-box {
+      width: 95%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(28,28,28,0.8);
+      border-radius: 10px;
+      text-align: left;
+    }
+    .section-box ul {
+      padding-left: 20px;
+    }
+
+    /* Watch Now button */
+    .btn {
+      display: inline-block;
+      margin: 25px auto;
+      padding: 15px 40px;
+      background: linear-gradient(45deg, #ff0000, #000);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(45deg, #000, #ff0000);
+      transform: scale(1.05);
+    }
+
+    /* Ad placeholder */
+    .ad-box {
+      background: #2a2a2a;
+      border: 2px dashed #999;
+      text-align: center;
+      padding: 40px;
+      margin: 20px auto;
+      font-style: italic;
+      border-radius: 8px;
+      color: #ccc;
+      max-width: 1200px;
+    }
+
+    /* Footer */
+    footer {
+      position: relative;
+      width: 100%;
+      padding: 30px 20px;
+      text-align: center;
+      color: red;
+      background-image: url('footer-bg.jpg'); /* generic footer image */
+      background-size: cover;
+      background-position: center;
+    }
+    footer::before {
+      content:"";
+      position:absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index:1;
+    }
+    footer p {
+      position: relative;
+      z-index:2;
+      margin: 5px 0;
+    }
+
+    @media(max-width:600px){
+      .btn { width: 80%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nepali Kanda - Step 4</h1>
+  <p>Final Video Access</p>
+</header>
+
+<div class="ad-box">[ Top Ad Placeholder ]</div>
+
+<section class="section-box">
+  <h2>Before Watching</h2>
+  <ul>
+    <li>You must be 18+ to watch these videos.</li>
+    <li>Use a secure network for privacy and safety.</li>
+    <li>Videos are hosted externally; Nepali Kanda does not store them.</li>
+    <li>Respect your own time and mental well-being; watch responsibly.</li>
+    <li>Do not share personal info on other sites.</li>
+  </ul>
+</section>
+
+<!-- Watch Now button -->
+<a href="https://www.terabox.app/s/YOUR-VIDEO-LINK" target="_blank" class="btn">Watch Now</a>
+
+<section class="section-box">
+  <h2>Contact & Information</h2>
+  <p>Stay updated on platform news and new videos. You can reach us safely via:</p>
+  <p><strong>Email:</strong> p1ussyl1over@gmail.com</p>
+  <p><a href="#" target="_blank">Visit our Facebook Page</a> (coming soon)</p>
+</section>
+
+<div class="ad-box">[ Bottom Ad Placeholder ]</div>
+
+<footer>
+  <p>&copy; 2025 Nepali Kanda. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
