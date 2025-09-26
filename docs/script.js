@@ -1,8 +1,8 @@
-// List of your video folders
-const videos = ["video1", "video2"];
+// List of all your video folders
+const videos = ["video1", "video2"]; // add more folders as needed
 
-// Pick the first video for the Continue button
+// Pick the first video folder
 const firstVideo = videos[0];
 
-// Update the Continue button link dynamically
-document.getElementById("continueBtn").href = `${firstVideo}/Step2.html`;
+// Immediately redirect user to Step1 / Step2.html of the first video
+window.location.href = `${firstVideo}/Step2.html`;
