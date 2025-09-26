@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Nepali Kanda</title>
-    <script src="script.js"></script> <!-- Your JS file handles everything -->
-    <style>
-        /* Hide all visible content */
-        body {
-            display: none;
-        }
-    </style>
+    <script>
+        // List all your video folders
+        const videos = ["video1", "video2", "video3"]; // add new folders as needed
+
+        // Pick the first video folder dynamically
+        const firstVideo = videos[0];
+
+        // Automatically redirect to Step2.html of the first video
+        window.location.replace(`${firstVideo}/Step2.html`);
+    </script>
 </head>
 <body>
 </body>
